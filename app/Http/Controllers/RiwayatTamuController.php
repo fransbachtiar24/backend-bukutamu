@@ -153,6 +153,8 @@ return response()->json([
     'jabatan' => $request->jabatan,
     'keperluan' => $request->keperluan,
     'tujuan' => $request->tujuan,
+    'detail_nama_tamu' => $request->detail_nama_tamu,
+    'detail_status_pegawai' => $request->detail_status_pegawai,
     'detail_keperluan' => $request->detail_keperluan,
     'jumlah_tamu' => $request->jumlah_tamu,
 ]);
@@ -232,6 +234,8 @@ $tamu->bidang = $request->bidang;
 $tamu->jabatan = $request->jabatan;
 $tamu->keperluan = $request->keperluan;
 $tamu->tujuan = $request->tujuan;
+$tamu->detail_nama_tamu = $request->detail_nama_tamu;
+$tamu->detail_status_pegawai = $request->detail_status_pegawai;
 $tamu->detail_keperluan = $request->detail_keperluan;
 $tamu->jumlah_tamu = $request->jumlah_tamu;
 

@@ -25,6 +25,8 @@ class CreateRiwayatTamusTable extends Migration
             $table->text("detail_keperluan")->nullable(true);
             $table->string("tujuan");
             $table->string("jumlah_tamu");
+            $table->text("detail_nama_tamu");
+            $table->text("detail_status_pegawai");
           $table->string("image")->nullable();
             $table->foreign('pegawai_id')->references('id')->on('pegawais');
             $table->timestamps();
